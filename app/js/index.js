@@ -4,5 +4,9 @@ require('styles/main.scss');
 import $ from 'jquery';
 import { log, logTitle } from 'logger';
 /* your imports */
-logTitle('Title');
+import Animal from './Animal';
+logTitle('Default Exports and Imports');
 /* coding examples */
+
+var animal = new Animal();
+log(animal.getClassType());
