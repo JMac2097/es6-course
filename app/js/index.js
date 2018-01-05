@@ -71,3 +71,40 @@ const hello = () => {
   log(add(100,100));
   log(milesToKm(100));
   
+
+  const person2 = {
+    name: "Derek",
+    cars: ["Ferrari", "Lambo"],
+    toString: function() {
+        this.cars.forEach(car => {
+            log(`${this.name} has a ${car}`);
+        });
+    }
+  };
+
+  person2.toString();
+
+const person3 = {
+    name: "Denzil",
+    fruits: ["Apple", "Orange", "Banana"],
+    toString: function() {
+        this.fruits.forEach(fruit => {
+            log(`${this.name} has a ${fruit}`);
+        });
+    }
+};
+
+person3.toString();
+
+
+const car = {
+    wheels: 4,
+    extras: ["stereo", "bluetooth", "wipers"],
+    toString: function() {
+        this.extras.forEach(extra => {
+            log(`${this.wheels} comes fitted with ${extra}`);
+        });
+    }
+}
+
+car.toString();
